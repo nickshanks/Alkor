@@ -1,0 +1,18 @@
+	/* Localized DisplayNames for your custom metadata attributes */
+	/* The form is:  "myMetadataKey" = "My Metadata Key";    */
+	/* The name on the left is the name defined in schema.xml */
+	/* The name on the right is what the user will see */
+"com_blizzard_diablo2_characterClass" = "Class";
+"com_blizzard_diablo2_characterLevel" = "Level";
+"com_blizzard_diablo2_honourific" = "Title"
+"com_blizzard_diablo2_lastPlayed" = "Last played";
+
+
+	/* Localized Description of you custom metadata attributes */
+	/* The form is: "myMetadataKey.Description" = "stuff";
+	/* com_Foo_YourAttrName should be definded in the schema.xml file  */
+	 /* The value on the right will be displayed by the Finder etc.. */
+"com_blizzard_diablo2_characterClass.Description" = "The character's class. One of Barbarian, Paladin, Amazon, Sorceress, Necromancer, Assassin or Druid.";
+"com_blizzard_diablo2_characterLevel.Description" = "The character level, a value between 1 and 99.";
+"com_blizzard_diablo2_honourific.Description" = "The honourific title bestowed upon the character upon completion of one of the difficulty levels.";
+"com_blizzard_diablo2_lastPlayed.Description" = "When the character was last played.";

@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {browserCellSelected = id; showPropertiesHelp = id; }; 
+            CLASS = ItemDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {gemTable = NSTableView; typeBrowser = NSBrowser; }; 
+            SUPERCLASS = NSDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

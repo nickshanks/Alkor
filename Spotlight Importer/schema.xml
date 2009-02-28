@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.apple.com/metadata" version="1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.apple.com/metadata file:///System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Resources/MetadataSchema.xsd">
+	<attributes>
+		<attribute name="com_blizzard_diablo2_characterClass" type="CFString" />
+		<attribute name="com_blizzard_diablo2_characterLevel" type="CFNumber" />
+		<attribute name="com_blizzard_diablo2_honourific" type="CFString" />
+		<attribute name="com_blizzard_diablo2_lastPlayed" type="CFDate" />
+		<attribute name="kMDItemLastUsedDate" type="CFDate" />
+	</attributes>
+	<types>
+		<type name="com.blizzard.diablo2.character">
+			<!-- The keys that this metadata importer sets. -->
+			<allattrs>
+				kMDItemTitle
+				kMDItemDisplayName
+				kMDItemDescription
+				com_blizzard_diablo2_characterClass
+				com_blizzard_diablo2_characterLevel
+				com_blizzard_diablo2_honourific
+				com_blizzard_diablo2_lastPlayed
+			</allattrs>
+			<!-- The keys that are displayed in spotlight search results & the get info window. Only displayed if present. -->
+			<displayattrs>
+				kMDItemDescription
+				com_blizzard_diablo2_lastPlayed
+			</displayattrs>
+			<!-- The keys that are displayed in finder search results. Always displayed, even if NULL. -->
+			<previewattrs>
+				com_blizzard_diablo2_lastPlayed
+				kMDItemDescription
+				com_blizzard_diablo2_honourific
+				com_blizzard_diablo2_characterClass
+				com_blizzard_diablo2_characterLevel
+			</previewattrs>
+		</type>
+	</types>
+</schema>

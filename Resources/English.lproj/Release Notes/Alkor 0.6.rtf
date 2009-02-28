@@ -1,0 +1,49 @@
+{\rtf1\mac\ansicpg-1\cocoartf824\cocoasubrtf410
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red191\green0\blue0;\red128\green128\blue128;}
+\vieww9540\viewh11680\viewkind0
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802\ql\qnatural
+
+\f0\b\fs32 \cf0 Alkor 0.6 Release Notes:\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802\ql\qnatural
+
+\f1\b0\fs22 \cf0 Released 10 March 2004\
+
+\f0\b \cf2 RESTRICTED RELEASE: Do Not Distribute!
+\fs32 \cf0 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802\ql\qnatural
+
+\f1\b0\fs24 \cf0 \
+
+\f0\b Working Features\
+
+\f1\b0 \'a5 Can load and save any valid character (to the best of my knowledge)\
+\'a5 Can create new characters from scratch. New characters must be given a name before they can be saved.\
+\
+
+\f0\b Unimplemented or Partially Implemented Features\
+
+\f1\b0 \'a5 Only supports Diablo II version 1.10 (including LoD) characters at present\
+\'a5 Item support (especially magical properties) mostly unimplemented.\
+\'a5 Cannot create mercenary (hireling) if one did not exist before. (Because meaning of merc_ai data field is unknown and cannot be generated yet.)\
+\'a5 AppleScript support partially implemented\
+	- "make new \'c9" command doesn't work\
+	- setting of NPC data unsupported\
+	- setting of mercenary (hireling) data unimplemented\
+\'a5 DC6 support missing\
+\'a5 No bit-level editor at present\
+\
+
+\f0\b Known Bugs\
+
+\f1\b0 \'a5 MPQs can only be read if they are in the same folder as the application.\
+\'a5 Various quest-related values in Act IV are not read/saved correctly\
+\'a5 The "Tree" column of the skills tab only ever lists Amazon skill trees\
+\'a5 Some apparently unused mercenary bits are not read in, always saved as 0\
+\'a5 144 apparently unused header bytes are not read in, always saved as 0\
+\'a5 Cannot save characters with the newbie character structure (a newbie has no items/quests/skills/waypoints etc).\
+\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802\ql\qnatural
+
+\fs20 \cf3 Alkor 0.6 \'a9 2003\'d02004 Nicholas Shanks.\
+}

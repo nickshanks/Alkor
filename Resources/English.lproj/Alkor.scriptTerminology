@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Classes</key>
+	<dict>
+		<key>Difficulty</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>acts</key>
+				<dict>
+					<key>Description</key>
+					<string>Act I to V (Act V is not saved if expansion is false).</string>
+					<key>Name</key>
+					<string>acts</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>Three difficulties, normal, nightmare and hell.</string>
+			<key>Name</key>
+			<string>difficulty</string>
+			<key>PluralName</key>
+			<string>difficulties</string>
+		</dict>
+		<key>Act</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the act as displayed by Diablo II.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>An entire act.</string>
+			<key>Name</key>
+			<string>act</string>
+			<key>PluralName</key>
+			<string>acts</string>
+		</dict>
+		<key>CharacterDocument</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>characterClassForScripting</key>
+				<dict>
+					<key>Description</key>
+					<string>The class of a character.</string>
+					<key>Name</key>
+					<string>character class</string>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the character. Can be up to sixteen characters long, must include at least two letters (upper or lower case) and may include one underscore. No other characters are permitted.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>died</key>
+				<dict>
+					<key>Description</key>
+					<string>True if the character has died at any time previously.</string>
+					<key>Name</key>
+					<string>has died</string>
+				</dict>
+				<key>expansion</key>
+				<dict>
+					<key>Description</key>
+					<string>True if the character is a Lord of Destruction character.</string>
+					<key>Name</key>
+					<string>expansion</string>
+				</dict>
+				<key>hardcore</key>
+				<dict>
+					<key>Description</key>
+					<string>True if the character is hardcore.</string>
+					<key>Name</key>
+					<string>hardcore</string>
+				</dict>
+				<key>experience</key>
+				<dict>
+					<key>Description</key>
+					<string>Total experience earned so far.</string>
+					<key>Name</key>
+					<string>experience</string>
+				</dict>
+				<key>level</key>
+				<dict>
+					<key>Description</key>
+					<string>Current character level.</string>
+					<key>Name</key>
+					<string>level</string>
+				</dict>
+				<key>carriedGold</key>
+				<dict>
+					<key>Description</key>
+					<string>Gold the player is carrying around with them.</string>
+					<key>Name</key>
+					<string>gold on person</string>
+				</dict>
+				<key>stashedGold</key>
+				<dict>
+					<key>Description</key>
+					<string>Gold the player has stored in their stash.</string>
+					<key>Name</key>
+					<string>gold in stash</string>
+				</dict>
+				<key>strength</key>
+				<dict>
+					<key>Description</key>
+					<string>The character's strength.</string>
+					<key>Name</key>
+					<string>strength</string>
+				</dict>
+				<key>energy</key>
+				<dict>
+					<key>Description</key>
+					<string>The character's energy.</string>
+					<key>Name</key>
+					<string>energy</string>
+				</dict>
+				<key>dexterity</key>
+				<dict>
+					<key>Description</key>
+					<string>The character's dexterity.</string>
+					<key>Name</key>
+					<string>dexterity</string>
+				</dict>
+				<key>vitality</key>
+				<dict>
+					<key>Description</key>
+					<string>The character's vitality.</string>
+					<key>Name</key>
+					<string>vitality</string>
+				</dict>
+				<key>unspentStats</key>
+				<dict>
+					<key>Description</key>
+					<string>Stat points (for strength, dexterity, vitality and energy) not yet assigned.</string>
+					<key>Name</key>
+					<string>unassigned stat points</string>
+				</dict>
+				<key>unspentSkills</key>
+				<dict>
+					<key>Description</key>
+					<string>Skill points not yet assigned.</string>
+					<key>Name</key>
+					<string>unassigned skill points</string>
+				</dict>
+				<key>life</key>
+				<dict>
+					<key>Description</key>
+					<string>The current life value including any item bonuses. Zero for dead characters.</string>
+					<key>Name</key>
+					<string>current life</string>
+				</dict>
+				<key>lifeMax</key>
+				<dict>
+					<key>Description</key>
+					<string>The maximum life allowed before consideration of item bonuses.</string>
+					<key>Name</key>
+					<string>maximum life</string>
+				</dict>
+				<key>mana</key>
+				<dict>
+					<key>Description</key>
+					<string>The current mana value including any item bonuses.</string>
+					<key>Name</key>
+					<string>current mana</string>
+				</dict>
+				<key>manaMax</key>
+				<dict>
+					<key>Description</key>
+					<string>The maximum mana allowed before consideration of item bonuses.</string>
+					<key>Name</key>
+					<string>maximum mana</string>
+				</dict>
+				<key>stamina</key>
+				<dict>
+					<key>Description</key>
+					<string>The current stamina value including any item bonuses.</string>
+					<key>Name</key>
+					<string>current stamina</string>
+				</dict>
+				<key>staminaMax</key>
+				<dict>
+					<key>Description</key>
+					<string>The maximum stamina allowed before consideration of item bonuses.</string>
+					<key>Name</key>
+					<string>maximum stamina</string>
+				</dict>
+				<key>maintainLegitimacy</key>
+				<dict>
+					<key>Description</key>
+					<string>Verifies all other values remain valid when one is changed.</string>
+					<key>Name</key>
+					<string>maintain legitimacy</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A document containing a Diablo II character.</string>
+			<key>Name</key>
+			<string>character document</string>
+			<key>PluralName</key>
+			<string>character documents</string>
+		</dict>
+		<key>Item</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>drop_level</key>
+				<dict>
+					<key>Description</key>
+					<string>The level at which the item was created.</string>
+					<key>Name</key>
+					<string>drop level</string>
+				</dict>
+				<key>identified</key>
+				<dict>
+					<key>Description</key>
+					<string>Item has been identified.</string>
+					<key>Name</key>
+					<string>identified</string>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the item as displayed by Diablo II.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>starter</key>
+				<dict>
+					<key>Description</key>
+					<string>Item has repair and sell cost of 1.</string>
+					<key>Name</key>
+					<string>starter</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A single Diablo II item.</string>
+			<key>Name</key>
+			<string>diablo item</string>
+			<key>PluralName</key>
+			<string>diablo items</string>
+		</dict>
+		<key>ItemDocument</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>item</key>
+				<dict>
+					<key>Description</key>
+					<string>The item object associated with this document.</string>
+					<key>Name</key>
+					<string>diablo item</string>
+				</dict>
+				<key>owner</key>
+				<dict>
+					<key>Description</key>
+					<string>The document that owns this item, if any. Could be a character with this item in their inventory, or another item into which this item is socketed, or the document might not have an owner (.d2i file).</string>
+					<key>Name</key>
+					<string>owner</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A document containing a Diablo II item. You will most often want to deal with the item directly, this can be obtained by getting the 'diablo item' of this object.</string>
+			<key>Name</key>
+			<string>item document</string>
+			<key>PluralName</key>
+			<string>item documents</string>
+		</dict>
+		<key>NSApplication</key>
+		<dict>
+			<key>Attributes</key>
+			<dict/>
+			<key>Description</key>
+			<string>The editor application object.</string>
+			<key>Name</key>
+			<string>application</string>
+			<key>PluralName</key>
+			<string>applications</string>
+		</dict>
+		<key>Skill</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the skill.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>tree</key>
+				<dict>
+					<key>Description</key>
+					<string>The skill tree to which this skill belongs.</string>
+					<key>Name</key>
+					<string>tree</string>
+				</dict>
+				<key>level</key>
+				<dict>
+					<key>Description</key>
+					<string>Your current level in this skill.</string>
+					<key>Name</key>
+					<string>level</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A single skill.</string>
+			<key>Name</key>
+			<string>skill</string>
+			<key>PluralName</key>
+			<string>skills</string>
+		</dict>
+		<key>Quest</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the quest as displayed by Diablo II.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>progress</key>
+				<dict>
+					<key>Description</key>
+					<string>The progress made through the quest.</string>
+					<key>Name</key>
+					<string>progress</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A single quest.</string>
+			<key>Name</key>
+			<string>quest</string>
+			<key>PluralName</key>
+			<string>quests</string>
+		</dict>
+		<key>Waypoint</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the waypoint as displayed by Diablo II.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>active</key>
+				<dict>
+					<key>Description</key>
+					<string>True if the waypoint has been activated.</string>
+					<key>Name</key>
+					<string>active</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A single waypoint.</string>
+			<key>Name</key>
+			<string>waypoint</string>
+			<key>PluralName</key>
+			<string>waypoints</string>
+		</dict>
+		<key>NPC</key>
+		<dict>
+			<key>Attributes</key>
+			<dict>
+				<key>name</key>
+				<dict>
+					<key>Description</key>
+					<string>The name of the NPC as displayed by Diablo II.</string>
+					<key>Name</key>
+					<string>name</string>
+				</dict>
+				<key>introduction</key>
+				<dict>
+					<key>Description</key>
+					<string>Whether or not the NPC has introduced themselves or not.</string>
+					<key>Name</key>
+					<string>introduction</string>
+				</dict>
+				<key>congratulation</key>
+				<dict>
+					<key>Description</key>
+					<string>Whether or not the NPC has congratulated you on defeating the act boss. Subsequently set to false on returning to a previous act when a character welcomes you back.</string>
+					<key>Name</key>
+					<string>congratulation</string>
+				</dict>
+			</dict>
+			<key>Description</key>
+			<string>A non-player character.</string>
+			<key>Name</key>
+			<string>NPC</string>
+			<key>PluralName</key>
+			<string>NPCs</string>
+		</dict>
+		<key>Zig</key>
+		<dict>
+			<key>Name</key>
+			<string>zig</string>
+			<key>PluralName</key>
+			<string>zigs</string>
+		</dict>
+	</dict>
+	<key>Commands</key>
+	<dict>
+		<key>ActivateWP</key>
+		<dict>
+			<key>Description</key>
+			<string>Activate a waypoint.</string>
+			<key>Name</key>
+			<string>activate</string>
+		</dict>
+		<key>DeactivateWP</key>
+		<dict>
+			<key>Description</key>
+			<string>Deactivate a waypoint.</string>
+			<key>Name</key>
+			<string>deactivate</string>
+		</dict>
+		<key>TakeOff</key>
+		<dict>
+			<key>Name</key>
+			<string>take off</string>
+			<key>Arguments</key>
+			<dict>
+				<key>Justice</key>
+				<dict>
+					<key>Name</key>
+					<string>for</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>AppleScript commands and classes specific to Alkor.</string>
+	<key>Enumerations</key>
+	<dict>
+		<key>D2CharacterClass</key>
+		<dict>
+			<key>D2CharacterClassAmazon</key>
+			<dict>
+				<key>Name</key>
+				<string>amazon</string>
+			</dict>
+			<key>D2CharacterClassAssassin</key>
+			<dict>
+				<key>Name</key>
+				<string>assassin</string>
+			</dict>
+			<key>D2CharacterClassBarbarian</key>
+			<dict>
+				<key>Name</key>
+				<string>barbarian</string>
+			</dict>
+			<key>D2CharacterClassDruid</key>
+			<dict>
+				<key>Name</key>
+				<string>druid</string>
+			</dict>
+			<key>D2CharacterClassNecromancer</key>
+			<dict>
+				<key>Name</key>
+				<string>necromancer</string>
+			</dict>
+			<key>D2CharacterClassPaladin</key>
+			<dict>
+				<key>Name</key>
+				<string>paladin</string>
+			</dict>
+			<key>D2CharacterClassSorceress</key>
+			<dict>
+				<key>Name</key>
+				<string>sorceress</string>
+			</dict>
+		</dict>
+		<key>Justice</key>
+		<dict>
+			<key>GreatJustice</key>
+			<dict>
+				<key>Name</key>
+				<string>great justice</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Name</key>
+	<string>Alkor Suite</string>
+</dict>
+</plist>

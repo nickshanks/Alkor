@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showReleaseNotes = id; }; 
+            CLASS = AppDelegate; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                activateAllWaypoints = id; 
+                activateImbue = id; 
+                closeAllQuests = id; 
+                completeAllQuests = id; 
+                newItemDocument = id; 
+                receiveAllQuests = id; 
+                resetAllNPCs = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

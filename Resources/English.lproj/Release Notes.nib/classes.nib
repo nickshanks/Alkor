@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            CLASS = AppDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {notesView = NSTextView; notesWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

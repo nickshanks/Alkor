@@ -1,0 +1,61 @@
+#import "CharacterDocument.h"
+
+@interface CharacterDocument (Stats)
+- (unsigned long)experience;
+- (void)setExperience:(unsigned long)value;
+- (unsigned long)level;
+- (void)setLevel:(unsigned long)value;
+- (unsigned long)carriedGold;
+- (void)setCarriedGold:(unsigned long)value;
+- (unsigned long)stashedGold;
+- (void)setStashedGold:(unsigned long)value;
+- (unsigned long)strength;
+- (void)setStrength:(unsigned long)value;
+- (unsigned long)energy;
+- (void)setEnergy:(unsigned long)value;
+- (unsigned long)dexterity;
+- (void)setDexterity:(unsigned long)value;
+- (unsigned long)vitality;
+- (void)setVitality:(unsigned long)value;
+- (unsigned long)unspentStats;
+- (void)setUnspentStats:(unsigned long)value;
+- (unsigned long)unspentSkills;
+- (void)setUnspentSkills:(unsigned long)value;
+- (unsigned long)life;
+- (void)setLife:(unsigned long)value;
+- (unsigned long)lifeMax;
+- (void)setLifeMax:(unsigned long)value;
+- (unsigned long)mana;
+- (void)setMana:(unsigned long)value;
+- (unsigned long)manaMax;
+- (void)setManaMax:(unsigned long)value;
+- (unsigned long)stamina;
+- (void)setStamina:(unsigned long)value;
+- (unsigned long)staminaMax;
+- (void)setStaminaMax:(unsigned long)value;
+
+- (void)setName:(NSString *)newName;
+- (NSString *)titleAsString;
+- (int)experienceForCurrentLevel;
+- (int)experienceForNextLevel;
+- (void)setCharacterClass:(int)value;
+- (NSArray *)characterClasses;
+- (void)setCharacterClasses:(NSArray *)v;
+- (void)setExpansion:(BOOL)flag;
+- (void)setHardcore:(BOOL)flag;
+- (int)progression;
+- (void)setProgression:(int)value;
+- (NSArray *)difficulties;
+- (void)setDifficulties:(NSArray *)value;
+- (NSArray *)skillsForDisplay;
+- (void)setSkillsForDisplay:(NSArray *)value;
+- (NSArray *)itemsForDisplay;
+- (void)setItemsForDisplay:(NSArray *)value;
+- (IBAction)reloadItemList:(id)sender;
+- (IBAction)activateAllWaypoints:(id)sender;
+- (IBAction)completeAllQuests:(id)sender;
+- (IBAction)activateImbue:(id)sender;
+- (IBAction)resetAllNPCs:(id)sender;
+- (IBAction)generateMercGUID:(id)sender;
+- (IBAction)selectMercItems:(id)sender;
+@end
