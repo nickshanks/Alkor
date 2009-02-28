@@ -696,6 +696,7 @@
 				INSTALL_PATH = /Library/Spotlight;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = "Diablo II";
+				WARNING_CFLAGS = "-Wno-multichar";
 				WRAPPER_EXTENSION = mdimporter;
 			};
 			name = Release;
@@ -704,7 +705,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -750,9 +750,8 @@
 		E14B158C08BEFF93009A7AFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G3;
-				GCC_VERSION = 4.2;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
@@ -760,9 +759,8 @@
 		E14B158D08BEFF93009A7AFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G3;
-				GCC_VERSION = 4.2;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
