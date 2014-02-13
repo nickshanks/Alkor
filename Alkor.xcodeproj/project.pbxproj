@@ -757,6 +757,7 @@
 		E14B158C08BEFF93009A7AFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = ppc;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G3;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
@@ -766,6 +767,7 @@
 		E14B158D08BEFF93009A7AFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = ppc;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G3;
 				MACOSX_DEPLOYMENT_TARGET = 10.2;
