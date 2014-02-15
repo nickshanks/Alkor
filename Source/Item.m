@@ -14,7 +14,7 @@ extern NSArray *bodypartCodes, *charmCodes, *spellCodes, *stackableCodes;
 extern NSArray *automagic, *lowqualityitems, *magicprefix, *magicsuffix, *magicaffix, *rareaffix, *setitems, *uniqueitems;
 
 // C routines
-inline BOOL item_is_of_type(NSString *item_type, NSArray *type_array)
+BOOL item_is_of_type(NSString *item_type, NSArray *type_array)
 {
 	return ([type_array indexOfObject:item_type] != NSNotFound);
 }

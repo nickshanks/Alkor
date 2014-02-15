@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-inline BOOL item_is_of_type(NSString *item_type, NSArray *type_array);
+BOOL item_is_of_type(NSString *item_type, NSArray *type_array);
 
 /*  Compact Structure:
 
